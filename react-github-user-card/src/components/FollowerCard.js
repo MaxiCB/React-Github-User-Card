@@ -9,7 +9,7 @@ const FollowerCard = (props) => {
     const userData = props.userData;
 
     return (
-        <Card style={{ width: '33%' }}>
+        <Card style={{ width: '33%', textAlign: 'center'}}>
             <img src={userData.avatar_url} alt={`Image of` + userData.login} style={{ borderRadius: '40px' }} />
             <CardBody>
                 <CardText>{userData.login}</CardText>

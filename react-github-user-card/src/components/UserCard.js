@@ -10,7 +10,7 @@ const UserCard = (props) => {
 
     return (
         <div>
-            <Jumbotron>
+            <Jumbotron style={{textAlign: 'center'}}>
                 <Container>
                     <Row>
                         <Col><h1 className="display-3">{userData.name}</h1></Col>
@@ -26,7 +26,7 @@ const UserCard = (props) => {
                     <Button color="primary" href={userData.html_url}>View</Button>
                 </p>
             </Jumbotron>
-            <Row xs='3'>
+            <Row xs='4'>
                 {userFollowers.map((user) => {
                     return <FollowerCard userData={user}/>
                 })}
